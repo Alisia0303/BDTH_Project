@@ -1,15 +1,19 @@
-let express = require('express')
-let mongoose = require('mongoose')
-let bodyParser = require('body-parser')
-let apiRoutes = require('./routes')
+let express = require("express");
+let mongoose = require("mongoose");
+let bodyParser = require("body-parser");
+let apiRoutes = require("./routes");
+const path = require("path");
 let app = express();
-app.use(bodyParser.urlencoded({
-    extended:true
-}));
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
 app.use(bodyParser.json());
+app.use("/frontend", express.static("../frontend"));
 
-mongoose.connect('mongodb://localhost/Road', {
-    useNewUrlParser:true
+mongoose.connect("mongodb://localhost/Road", {
+  useNewUrlParser: true,
 });
 var db = mongoose.connection;
 
@@ -29,17 +33,20 @@ var db = mongoose.connection;
 // });
 
 // Add check for db connection
-if (!db)
-    console.log("Error connecting db")
-else
-    console.log("Db connected successfully")
-    console.log("Collections", db.collections)
+if (!db) console.log("Error connecting db");
+else console.log("Db connected successfully");
+console.log("Collections", db.collections);
 
 // Setup server port
 var port = process.env.PORT || 3001;
-app.get('/', (req, res) => res.send('Hello, this is BDTH Application endpoints'));
-app.use('/api', apiRoutes);
+app.get("/", (req, res) => {
+  res.send("Hello, this is BDTH Application endpoints.");
+});
+app.get("/home", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend", "index.html"));
+});
+app.use("/api", apiRoutes);
 // Launch app to listen to specified port
-app.listen(port, function(){
-    console.log("Running Application on port " + port);
+app.listen(port, function () {
+  console.log("Running Application on port " + port);
 });

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* This root defines CSS properties that can be reused in CSS elements. Access a property by using var(<property name>), for example: see .btn */
+:root {
+	--font-style-nav-level-1: 18px;
+	--font-style-nav-level-2: 17px;
+	--font-style-nav-level-3: 16px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	/* font-family: 'Spectral', serif; */
+	font-family: 'Merriweather', serif;
+}
+body {
+	background: #ffffff;
+}
+.wrapper {
+	display: flex;
+	position: relative;
+}
+.wrapper .sidebar {
+	position: fixed;
+	width: 320px;
+	height: 100%;
+	background: #f5e6ca;
+	padding: 10px 0;
+	padding-top: 20px;
+	overflow-y: scroll;
+}
+.wrapper .sidebar h2 {
+	color: #f54748;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.hidden {
+	display: none;
+}
+.wrapper .sidebar ul li div.chapter ul {
+	padding: 0;
+}
+.wrapper .sidebar ul li,
+.wrapper .sidebar ul li div.chapter ul li {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+.wrapper .sidebar ul li a.nav-name {
+	color: #f5e6ca;
+	background-color: #f54748;
+	font-weight: bold;
+	width: 100%;
+	height: 35px;
+	font-size: var(--font-style-nav-level-1);
+	padding-top: 8px;
+}
+.wrapper .sidebar ul li a,
+.wrapper .sidebar ul li div.chapter ul li a {
+	color: #343f56;
+	display: block;
+	padding: 2px;
+}
+.wrapper .sidebar ul li div.chapter,
+.wrapper .sidebar ul li div.fine {
+	display: inline;
+}
+.wrapper .sidebar ul li div.chapter a,
+.wrapper .sidebar ul li div.fine a {
+	color: #343f56;
+	font-weight: bold;
+	/*display: block;*/
+	display: inline;
+	margin-left: 10px;
+	font-size: var(--font-style-nav-level-1);
+}
+.wrapper .sidebar ul li div.chapter a.chapter{
+	font-size: var(--font-style-nav-level-2);
+}
+.wrapper .sidebar ul li div.chapter a.rule{
+	font-size: var(--font-style-nav-level-3);
+}
+.wrapper .sidebar ul li div.chapter a.opened,
+.wrapper .sidebar ul li div.fine a.opened {
+	color: #f54748;
+}
+.wrapper .sidebar ul li .far {
+	width: 25px;
+	color: #185adb;
+	display: inline;
+}
+.wrapper .sidebar ul li .far:hover {
+	width: 25px;
+	color: #f54748;
+	display: inline;
+}
+.wrapper .sidebar ul li .fas {
+	width: 25px;
+	color: #01937c;
+}
+.wrapper .sidebar ul li a.nav-name:hover {
+	color: #000000;
+	background-color: #bb73ff;
+}
+.wrapper .sidebar ul li a.open-link:hover{
+	color: #f54748;
+}
+.wrapper .main_content {
+	width: 100%;
+	margin-left: 320px;
+}
+.wrapper .main_content .header {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #fff;
+	border-bottom: 1px solid #e0e4e8;
+}
+.wrapper .main_content .header .title {
+	color: #185adb;
+	font-size: 25px;
+	padding: 10px 0;
+	font-weight: bold;
+}
+.wrapper .main_content .header .subtitle {
+	color: dimgray;
+	font-size: 12px;
+	font-weight: lighter;
+	font-style: italic;
+	line-height: 1.5;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.wrapper .main_content .description {
+	padding: 20px;
+	background: #fff;
+	color: #717171;
+	border-bottom: 1px solid #e0e4e8;
+}
+.wrapper .main_content .info {
+	margin: 20px;
+	color: #717171;
+	line-height: 25px;
+}
+.wrapper .main_content .info .parent {
+	font-size: 20px;
+	font-weight: bold;
+	color: #01937c;
+	margin-bottom: 25px;
+}
+.wrapper .main_content .info div.card-info {
+	/* background-color: #cee5d0;
+	border-radius: 20px; */
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
+	height: fit-content;
+}
+.wrapper .main_content .info p.card-title,
+.wrapper .main_content .info div.card-title {
+	background-color: #cee5d0;
+	border-radius: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0a1d37;
+}
+.wrapper .main_content .info a.card-title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #0a1d37;
+}
+.wrapper .main_content .info .card-title a:hover {
+	color: #01937c;
+}
+.wrapper .main_content .info p.card-content {
+	font-size: 14px;
+	color: #000000;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.wrapper .main_content .info p.card-content .tab {
+	display: inline-block;
+	margin-left: 40px;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav
+.wrapper .main_content .info .card .card-info card-content .card-fine {
+	display: inline-block;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav {
+	float: left;
+	width: 22%;
+	margin-top: 20px;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav ul {
+	padding: 0;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav li {
+	background-color: white;
+	border-radius: 30px;
+	border-top: 3px solid rgba(255, 0, 0, 0.342);
+	border-bottom: 3px solid rgba(255, 0, 0, 0.342);
+	border-left: 3px solid rgba(255, 0, 0, 0.342);
+	border-right: 3px solid rgba(255, 0, 0, 0.342);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav li a {
+	align-items: center;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav li a .fas{
+	/* color: #185adb; */
+	color: rgba(255, 0, 0, 0.548);
+	padding-left: 50px;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav li a .fas.fa-car{
+	/* color: #185adb; */
+	color: rgba(255, 0, 0, 0.548);
+	padding-left: 55px;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav li:hover {
+	color: white;
+	background-color: rgba(255, 0, 0, 0.548);
+	border-top: 3px solid rgba(255, 0, 0, 0.548);
+	border-bottom: 3px solid rgba(255, 0, 0, 0.548);
+	border-left: 3px solid rgba(255, 0, 0, 0.548);
+	border-right: 3px solid rgba(255, 0, 0, 0.548);
+}
+.wrapper .main_content .info .card .card-info .card-content .card-nav li a .fas:hover{
+	/* color: #185adb; */
+	color: white;
+}
+.wrapper .main_content .info .card .card-info .card-content .card-fine {
+	float: right;
+	width: 76%;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding: 20px;
+	border-top: 3px solid rgba(255, 0, 0, 0.342);
+	border-bottom: 3px solid rgba(255, 0, 0, 0.342);
+	border-left: 3px solid rgba(255, 0, 0, 0.342);
+	border-right: 3px solid rgba(255, 0, 0, 0.342);
+	border-radius: 30px;
+}
