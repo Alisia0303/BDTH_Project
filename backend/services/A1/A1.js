@@ -38,21 +38,28 @@ exports.exams = async function(req, res){
 
 exports.points = async function(req, res) {
     var user_result = req.body.user_result;
-    console.log("user_reult", user_result)
+    // console.log("user_result", user_result)
     var question_list = []
     for (var i=0; i< user_result.length; i++){
-        A1.find({number: user_result[i].number}, function(err, x){
-            if (x){
-                question_list.push(x)
-            }
-            else if (err) {
-                console.log("Error", err)
-            }
-        })
+        // console.log("number ", user_result[i].number)
+        var question = await A1.find({number: user_result[i].number})
+        question_list.push(question)
     }
-    console.log("question list", question_list)
+    // console.log("question list", question_list)
+    var user_point = 0
+    for (var i=0; i< user_result.length; i++) {
+        // console.log("user_result[i].answer ", user_result[i].answer)
+        // console.log("question_list[i].right_answer ", question_list[i][0].right_answer)
+        if (user_result[i].answer === question_list[i][0].right_answer) {
+            user_point = user_point + 1
+            // console.log("user_point at ", user_point)
+        }
+    }
+    console.log("user point is ", user_point)
     res.json({
         status: "success",
-        message: 'Points detail following'
+        message: 'Points detail following',
+        count: question_list.length,
+        data: {points: user_point, exams: question_list}
     });
 }

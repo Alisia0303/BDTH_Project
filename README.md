@@ -54,3 +54,53 @@
     + Url: http://localhost:3001/api/a1/exams
     + Payload: None
     + Ex:  http://localhost:3001/api/a1/exams
+
+- Get points and return right answers:
+    + Url: http://localhost:3001/api/a1/points
+    + Ex: 
+       curl --location --request POST 'http://localhost:3001/api/a1/points' \
+            --header 'Content-Type: application/json' \
+            --data-raw '{
+                "user_result": [
+                    {"number": 10,
+                    "answer": 2},
+                    {"number": 20,
+                    "answer": 2},
+                    {"number": 30,
+                    "answer": 2},
+                    {"number": 40,
+                    "answer": 2},
+                    {"number": 50,
+                    "answer": 2},
+                    {"number": 60,
+                    "answer": 2},
+                    {"number": 70,
+                    "answer": 2},
+                    {"number": 80,
+                    "answer": 2},
+                    {"number": 90,
+                    "answer": 2},
+                    {"number": 100,
+                    "answer": 2},
+                    {"number": 110,
+                    "answer": 2},
+                    {"number": 120,
+                    "answer": 2},
+                    {"number": 130,
+                    "answer": 2},
+                    {"number": 140,
+                    "answer": 2},
+                    {"number": 150,
+                    "answer": 2},
+                    {"number": 160,
+                    "answer": 2},
+                    {"number": 170,
+                    "answer": 2},
+                    {"number": 180,
+                    "answer": 2},
+                    {"number": 190,
+                    "answer": 2},
+                    {"number": 199,
+                    "answer": 2}
+                ]
+            }'
