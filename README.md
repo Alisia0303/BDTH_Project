@@ -47,3 +47,10 @@
         http://localhost:3001/api/fine/list?aviolation=SIGNS
 
         http://localhost:3001/api/fine/list?aviolation=SIGNS&types=bike
+
+
++++ Exams:
+- Get 20 questions:
+    + Url: http://localhost:3001/api/a1/exams
+    + Payload: None
+    + Ex:  http://localhost:3001/api/a1/exams
