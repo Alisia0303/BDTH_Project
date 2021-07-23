@@ -40,8 +40,10 @@
 - Get rules with filter by aviolation or types:
     + Url: http://localhost:3001/api/fine/list
     + Payload: aviolation, types or not.
-    + Ex: http://localhost:3001/api/fine/list
+    + Ex: 
+            
+        http://localhost:3001/api/fine/list
 
-          http://localhost:3001/api/fine/list?aviolation=SIGNS
-          
-          http://localhost:3001/api/fine/list?aviolation=SIGNS&types=bike
+        http://localhost:3001/api/fine/list?aviolation=SIGNS
+
+        http://localhost:3001/api/fine/list?aviolation=SIGNS&types=bike
