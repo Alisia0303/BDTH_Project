@@ -35,3 +35,11 @@
     + Url: http://localhost:3001/api/law_rule/getNumber
     + Payload: number
     + Ex: http://localhost:3001/api/law_rule/getNumber?number=10
+
++++ Fines:
+- Get rules with filter by aviolation or types:
+    + Url: http://localhost:3001/api/fine/list
+    + Payload: aviolation, types or not.
+    + Ex: http://localhost:3001/api/fine/list
+          http://localhost:3001/api/fine/list?aviolation=SIGNS
+          http://localhost:3001/api/fine/list?aviolation=SIGNS&types=bike
