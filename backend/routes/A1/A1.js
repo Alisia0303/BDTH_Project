@@ -10,7 +10,7 @@ A1Router.get('/', function(req, res){
 
 var A1Controller = require('../../services/A1/A1');
 
-A1Router.route('/exams').get(A1Controller.exams)
+A1Router.route('/exams').post(A1Controller.exams)
 A1Router.route('/points').post(A1Controller.points)
 
 // Export API routers
