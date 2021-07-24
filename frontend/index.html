@@ -19,9 +19,126 @@
                 </li>
                 <li class="nav nav-fine">
                     <a class="nav nav-fine nav-name" href="#">Mức phạt</a>
+                    <ul class="nav nav-option hidden">
+                        <li class="fine fine-option--aviolation">
+                            <div class="aviolation">
+                                <a href="#" class="fine fine-option--aviolation open-link">Loại vi phạm</a>
+                                <ul class="fine fine-list--aviolation">
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--LANE selected">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--LANE open-link selected">
+                                                <i class="fas fa-grip-lines-vertical fine-aviolation-i fine-aviolation--LANE fa-2x selected"
+                                                    aria-hidden="true">
+                                                </i>
+                                                Làn, vạch kẻ đường
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--SIGNS">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--SIGNS open-link">
+                                                <i class="fas fa-sign fine-aviolation-i fine-aviolation--SIGNS fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Biển báo, đèn tín hiệu
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--SPEED">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--SPEED open-link">
+                                                <i class="fas fa-tachometer-alt fine-aviolation-i fine-aviolation--SPEED fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Tốc độ, khoảng cách
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--PARKING">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--PARKING open-link">
+                                                <i class="fas fa-parking fine-aviolation-i fine-aviolation--PARKING fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Dừng xe, đỗ xe
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--TURN">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--TURN open-link">
+                                                <i class="fas fa-directions fine-aviolation-i fine-aviolation--TURN fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Chuyển hướng, nhường đường
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--ALCOHOL">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--ALCOHOL open-link">
+                                                <i class="fas fa-wine-glass-alt fine-aviolation-i fine-aviolation--ALCOHOL fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Nồng độ cồn, ma túy
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-aviolation-button fine-aviolation--OTHER">
+                                            <a href="#"
+                                                class="fine-aviolation fine-aviolation-a fine-aviolation--OTHER open-link">
+                                                <i class="fas fa-comment-dots fine-aviolation-i fine-aviolation--OTHER fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Lỗi khác
+                                            </a>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fine fine-option--vehicle">
+                            <div class="vehicle">
+                                <a href="#" class="fine fine-option--vehicle open-link">Loại phương tiện</a>
+                                <ul class="fine fine-list--vehicle">
+                                    <li>
+                                        <button class="fine-vehicle-button fine-vehicle--bike">
+                                            <a href="#"
+                                                class="fine-vehicle fine-vehicle-a fine-vehicle--bike open-link">
+                                                <i class="fas fa-bicycle fine-vehicle-i fine-vehicle--bike fa-2x"
+                                                    aria-hidden="true">
+                                                </i>
+                                                Xe đạp
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-vehicle-button fine-vehicle--motor">
+                                            <a href="#"
+                                                class="fine-vehicle fine-vehicle-a fine-vehicle--motor open-link">
+                                                <i class="fas fa-motorcycle fine-vehicle-i fine-vehicle--motor fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Xe máy
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="fine-vehicle-button fine-vehicle--car">
+                                            <a href="#" class="fine-vehicle fine-vehicle-a fine-vehicle--car open-link">
+                                                <i class="fas fa-car fine-vehicle-i fine-vehicle--car fa-2x"
+                                                    aria-hidden="true"></i>
+                                                Xe hơi
+                                            </a>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav nav-exam">
-                    <a class="nav nav-fine nav-name" href="#">Đề thi bằng lái A1</a>
+                    <a class="nav nav-fine nav-name" href="#">Đề thi thử bằng lái xe A1</a>
                 </li>
             </ul>
         </div>
@@ -44,109 +161,269 @@
                     51/2001/QH10.", "Quốc hội ban hành Luật Giao thông đường bộ.
                 </div>
             </div>
-            <div class="info">
-                <div class="parent">
+            <div class="law-info hidden">
+                <div class="law-parent">
                     <p></p>
                 </div>
-                <div class="card">
-                    <!--div class="card-info info--1">
-                            <div class="card-title">
-                                <a href="#" class="open-link">
-                                    Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương
-                                    tiện
-                                    đang điều khiển (trừ các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy
-                                    định)
-                                </a>
+                <div class="law-card">
+                </div>
+            </div>
+            <div class="fine-info hidden">
+                <div class="fine-card">
+                </div>
+            </div>
+            <div class="before-exam-info hidden">
+                <div class="before-exam-message">
+                    <div class="before-exam-message--introduction--1">
+                        <p class="introduction--1-1">
+                            Bạn chưa đủ tự tin để tham gia kỳ thi sát hạch xe mô tô
+                            A1?</p>
+                        <p class="introduction--1-2">
+                            Bạn chưa biết liệu mình đã trang bị đủ
+                            kiến thức về những câu hỏi sẽ xuất hiện trong bài thi hay chưa?
+                        </p>
+                        <div class="before-exam-message--introduction--2">
+                            <div class="icon-blink">
+                                <i class="far fa-laugh-wink fa-5x"></i>
                             </div>
-                            <div class="card-content hidden">
-                                <div class="card-nav">
-                                    <ul>
-                                        <li class="card-nav-car">
-                                            <a class="vehicle open-link" href="#"><i class="fas fa-car fa-3x"></i></a>
-                                        </li>
-                                        <li class="card-nav-motor">
-                                            <a class="vehicle open-link" href="#"><i
-                                                    class="fas fa-motorcycle fa-3x"></i></a>
-                                        </li>
-                                        <li class="card-nav-bike">
-                                            <a class="vehicle open-link" href="#"><i class="fas fa-bicycle fa-3x"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-fine">
-                                    <div class="fine-item">
-                                        <p class="level">Vi phạm</p>
-                                        <p class="money">400.000₫ - 600.000₫</p>
-                                        <p class="additional">Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03
-                                            tháng
-                                        </p>
-                                    </div>
-                                    <div class="fine-item">
-                                        <p class="level">Gây tai nạn giao thông</p>
-                                        <p class="money">4.000.000₫ - 5.000.000₫</p>
-                                        <p class="additional">Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04
-                                            tháng
-                                        </p>
-                                    </div>
-                                    <div class="fine-item">
-                                        <p class="level">Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản
-                                            lý,
-                                            bảo trì đường cao tốc</p>
-                                        <p class="money">2.000.000₫ - 3.000.000₫</p>
-                                        <p class="additional">Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05
-                                            tháng
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="message">
+                                <p class="message--1-1">
+                                    Đây chính là cơ hội cho bạn ôn tập kiến thức!
+                                </p>
+                                <p class="message--1-2">
+                                    Tại đây bạn sẽ được thực hiện một bài thi thử cho kỳ thi này.
+                                </p>
+                                <p class="message--1-3">
+                                    Bài thi gồm 20 câu hỏi, nằm trong bộ đề thi sát hạch lý thuyết lái xe mô tô hạng A1
+                                    năm
+                                    2020.
+                                </p>
                             </div>
                         </div>
-                        <div-- class="card-info info--2">
-                            <div class="card-title">
-                                <a href="#" class="open-link">Lùi xe không đúng quy định gây tai nạn giao thông</a>
-                            </div>
-                            <div class="card-content hidden">
-                                <div class="card-nav">
-                                    <ul>
-                                        <li class="card-nav-car">
-                                            <a class="vehicle open-link" href="#"><i class="fas fa-car fa-3x"></i></a>
-                                        </li>
-                                        <li class="card-nav-motor">
-                                            <a class="vehicle open-link" href="#"><i
-                                                    class="fas fa-motorcycle fa-3x"></i></a>
-                                        </li>
-                                        <li class="card-nav-bike">
-                                            <a class="vehicle open-link" href="#"><i class="fas fa-bicycle fa-3x"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-fine">
-                                    <div class="fine-item">
-                                        <p class="level">Vi phạm</p>
-                                        <p class="money">400.000₫ - 600.000₫</p>
-                                        <p class="additional">Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03
-                                            tháng
-                                        </p>
-                                    </div>
-                                    <div class="fine-item">
-                                        <p class="level">Gây tai nạn giao thông</p>
-                                        <p class="money">4.000.000₫ - 5.000.000₫</p>
-                                        <p class="additional">Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04
-                                            tháng
-                                        </p>
-                                    </div>
-                                    <div class="fine-item">
-                                        <p class="level">Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản
-                                            lý,
-                                            bảo trì đường cao tốc</p>
-                                        <p class="money">2.000.000₫ - 3.000.000₫</p>
-                                        <p class="additional">Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05
-                                            tháng
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div-->
+                    </div>
+                    <div class="before-exam-message--instruction">
+                        <div class="instruction--1">
+                            Cách làm bài:
+                        </div>
+                        <div class="instruction--2">
+                            Mỗi câu hỏi có từ 02 - 04 ý trả lời, trong đó chỉ có duy nhất 01 ý trả lời
+                            đúng nhất.
+                        </div>
+                    </div>
                 </div>
+                <div class="before-exam-button">
+                    <button class="btn-start-exam">
+                        Làm bài
+                    </button>
+                </div>
+            </div>
+            <div class="exam-info hidden">
+                <div class="exam-question-list">
+                    <div class="exam-question-box exam-question-box--1 question-id--1 question-number--72 traffic_law">
+                        <div class="exam-question-title question-id--1 question-number--72 type--law">
+                            <div class="title--1">
+                                Câu 1:
+                            </div>
+                            <div class="title--2">
+                                Người lái xe phải giảm tốc độ thấp hơn tốc độ tối đa cho phép đến mức cần thiết, chú ý
+                                quan sát và chuẩn bị sẵn
+                                sàng những tình huống có thế xảy ra để phòng ngừa tai nạn trong các trường hợp nào dưới
+                                đây?
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="frontend/img/072.jpg">
+                        </div>
+                        <div class="exam-question-options question-id--1 question-number--72">
+                            <ul class="exam-question-options-ul question-id--1 question-number--72">
+                                <li class="question-id--1 question-number--72 li-option--1">
+                                    <button
+                                        class="question-id--1 question-number--72 btn-option btn-option--1 selected">
+                                        1) Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không
+                                        được
+                                        phép.
+                                    </button>
+                                </li>
+                                <li class="question-id--1 question-number--72 li-option--2">
+                                    <button class="question-id--1 question-number--72 btn-option btn-option--2">
+                                        2) Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn
+                                        giao
+                                        thông.
+                                    </button>
+                                </li>
+                                <li class="question-id--1 question-number--72 li-option--3">
+                                    <button class="question-id--1 question-number--72 btn-option btn-option--3">
+                                        3) Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng
+                                        biệt
+                                        hoặc
+                                        để phân chia phần đường của xe cơ
+                                        giới và xe thô sơ.
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="exam-buttons">
+                    <div class="cancel">
+                        <button class="btn-cancel-exam">
+                            Hủy bài
+                        </button>
+                    </div>
+                    <div class="submit">
+                        <button class="btn-submit-exam">
+                            Nộp bài
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="answer-info hidden">
+                <div class="exam-answer-point">
+                    <!--
+                    <div class="title">
+                        <div class="title--1">Số điểm của bạn là:</div>
+                        <div class="title--2">17/20</div>
+                    </div>
+                    <div class="statistics">
+                        <table class="statistics-table">
+                            <tr>
+                                <th class="column--1">Loại câu hỏi</th>
+                                <th class="column--2">Số điểm</th>
+                            </tr>
+                            <tr>
+                                <td>Luật giao thông</td>
+                                <td class="column--2">4/7</td>
+                            </tr>
+                            <tr>
+                                <td>Biển báo</td>
+                                <td class="column--2">4/7</td>
+                            </tr>
+                            <tr>
+                                <td>Sa hình</td>
+                                <td class="column--2">4/7</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                    -->
+                </div>
+                <div class="exam-answer-list">
+                    <div class="exam-answer-box exam-answer-box--1 answer-id--1 answer-number--72 traffic_law">
+                        <div class="exam-answer-title answer-id--1 answer-number--72">
+                            <div class="title--1">
+                                Câu 1:
+                            </div>
+                            <div class="title--2">
+                                Người lái xe phải giảm tốc độ thấp hơn tốc độ tối đa cho phép đến mức cần thiết, chú ý
+                                quan sát và chuẩn bị sẵn
+                                sàng những tình huống có thế xảy ra để phòng ngừa tai nạn trong các trường hợp nào dưới
+                                đây?
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="frontend/img/072.jpg">
+                        </div>
+                        <div class="exam-answer-options answer-id--1 answer-number--72">
+                            <ul class="exam-answer-options-ul answer-id--1 answer-number--72">
+                                <li class="answer-id--1 answer-number--72 li-option--1">
+                                    <button class="answer-id--1 answer-number--72 btn-option btn-option--1 correct">
+                                        1) Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không
+                                        được
+                                        phép.
+                                    </button>
+                                </li>
+                                <li class="answer-id--1 answer-number--72 li-option--2">
+                                    <button class="answer-id--1 answer-number--72 btn-option btn-option--2 wrong">
+                                        2) Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn
+                                        giao
+                                        thông.
+                                    </button>
+                                </li>
+                                <li class="answer-id--1 answer-number--72 li-option--3">
+                                    <button class="answer-id--1 answer-number--72 btn-option btn-option--3">
+                                        3) Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng
+                                        biệt
+                                        hoặc
+                                        để phân chia phần đường của xe cơ
+                                        giới và xe thô sơ.
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="exam-answer-explain answer-id--1 answer-number--72">
+                            Giải thích: Chú ý từ khóa: "Là cảnh sát giao thông"
+                        </div>
+                    </div>
+                </div>
+                <div class="next-buttons">
+                    <div class="check-history">
+                        <button class="btn-check-history-exam">
+                            Xem lịch sử bài làm
+                        </button>
+                    </div>
+                    <div class="continue">
+                        <button class="btn-continue-exam">
+                            Tiếp tục làm bài
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="history-info hidden">
+                <table class="statistics-table">
+                    <tr class="parent">
+                        <th class="parent column--1">Lần</th>
+                        <th class="parent column--2">Tổng điểm</th>
+                        <th class="parent column--3">Thống kê</th>
+                    </tr>
+                    <tr class="parent">
+                        <td class="parent column--1">1</td>
+                        <td class="parent column--2">10/20</td>
+                        <td class="parent column--3">
+                            <table class="statistics-sub-table">
+                                <tr>
+                                    <th class="column--1-1">Loại câu hỏi</th>
+                                    <th class="column--1-2">Số điểm</th>
+                                </tr>
+                                <tr>
+                                    <td>Luật giao thông</td>
+                                    <td>4/7</td>
+                                </tr>
+                                <tr>
+                                    <td>Biển báo</td>
+                                    <td>4/7</td>
+                                </tr>
+                                <tr>
+                                    <td>Sa hình</td>
+                                    <td>4/7</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="parent">
+                        <td class="parent column--1">2</td>
+                        <td class="parent column--2">4/20</td>
+                        <td class="parent column--2">
+                            <table class="statistics-sub-table">
+                                <tr>
+                                    <th class="column--1-1">Loại câu hỏi</th>
+                                    <th class="column--1-2">Số điểm</th>
+                                </tr>
+                                <tr>
+                                    <td>Luật giao thông</td>
+                                    <td>4/7</td>
+                                </tr>
+                                <tr>
+                                    <td>Biển báo</td>
+                                    <td>4/7</td>
+                                </tr>
+                                <tr>
+                                    <td>Sa hình</td>
+                                    <td>4/7</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
